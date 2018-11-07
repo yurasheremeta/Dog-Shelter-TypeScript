@@ -7,10 +7,12 @@ export enum ActionTypeKeys {
 export interface GetImageAction {
     readonly type: ActionTypeKeys.GET_IMAGE;
     readonly payload: Promise<object>;
+ 
 }
 
 export interface GetImageFulfieldAction {
    readonly type: ActionTypeKeys.GET_IMAGE_FULFILLED;
+
 }
 
 export interface GetImageRejectedAction {
